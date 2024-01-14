@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/20a59be7-7062-4991-bca0-805e9a7f2716/IN-en-20240107-trifectadaily-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    opacity: 0.9;   
+} */
+
+.container {
+    margin: 1rem auto;
+    max-height: 95vh;
+    width: 65vw;
+    overflow-y: scroll;
+    border-radius: 1rem;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+form {
+    position: fixed;
+    padding: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+input,
+button {
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: white;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 15vw;
+}
+
+button {
+    width: 5vw;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(165, 42, 42, 0.584);
+    color: black;
+}
+
+.box {
+    padding: 1rem;
+    padding-top: 4rem;
+    min-height: 60vh;
+    background-color: rgba(165, 42, 42, 0.247);
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 1.5rem;
+}
+
+.item {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+.name {
+    font-size: 1rem;
+    height: 1.2rem;
+    width: 6vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+img {
+    width: 8vw;
+    height: 20vh;
+}
+
+.hide {
+    display: none;
+}
